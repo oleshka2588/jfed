@@ -1,0 +1,35 @@
+#linkTest a:link {
+	
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {width:10px; height:10px;}
+    100% {width:400px; height:230px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {width:10px; height:10px;}
+    100% {width:400px; height:230px;}
+}
+
+img3 {
+    width: 400px;
+    height: 230px;
+    
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+   
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}

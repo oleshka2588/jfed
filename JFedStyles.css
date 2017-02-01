@@ -1,0 +1,384 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	text-align: center;
+	background-color:#F2F2FF;
+}
+
+h3{
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+a:link  {
+	text-decoration: none;
+}
+
+#addElement {
+	position:relative;
+	left:-360px;
+}
+
+a#calendarSelectedDay {
+	display:inline-block;
+	background-image:url("calendarImgs/day.jpg");
+	font-color: #FFFFFF;
+	width:30px;
+	height:30px;
+	margin-top:4px;
+	margin-left:12px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+a#calendarDay {
+	display: inline-block;
+	background-image: url("calendarImgs/day.jpg");
+	width:30px;
+	height:30px;
+	margin-top:4px;
+	margin-left:12px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+a#calendarDay:hover {
+	display: inline-block;
+	background-image:url("calendarImgs/dayOnHover.jpg");
+	width:30px;
+	height:30px;
+	margin-top:4px;
+	margin-left:12px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+a#calendarDay:active  {
+	display:inline-block;
+	background-image:url("calendarImgs/dayCurrent.jpg");
+	width:30px;
+	height:30px;
+	margin-top:4px;
+	margin-left:12px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+a#calendarDayDifferentWeek{
+	display: inline-block;
+	background-image: url("calendarImgs/dayOnHover.jpg");
+	width:30px;
+	height:30px;
+	margin-top:4px;
+	margin-left:12px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+a#calendarDayDifferentWeek:active  {
+	display:inline-block;
+	background-image:url("calendarImgs/dayCurrent.jpg");
+	width:30px;
+	height:30px;
+	margin-top:4px;
+	margin-left:12px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#centered {
+	width: 800px;
+	text-align: left;
+	border: 0px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#centerImages {
+	width:580px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+#centerTumbnails {
+	width:580px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#circleBlack {
+    background: #111;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+	float: left;
+	margin: 1px;
+	cursor:pointer;
+}
+
+#circleGray {
+    background: #BBB;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+	float: left;
+	margin: 1px;
+	cursor:pointer;
+}
+
+#circleContainer {
+	width:auto;
+    margin-left:auto;
+	margin-right:auto;
+	height:20px;
+}
+
+#coveringDiv {
+	position: fixed;
+	top:0;
+	left:0;
+	margin-bottom:0;
+	margin-right:0;
+	width:100%;
+	height:100%;
+	background-color: #010101;
+	z-index: 1;
+	opacity: 0.9;
+}
+
+#coveringImg {
+	position: fixed;
+	top:50%;
+	left:50%;
+	
+	height: 80%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	opacity: 1;
+}
+
+#coveringLeftDiv {
+	
+}
+
+#closingCross {
+	position: fixed;
+	right: 30px;
+	top:5%;
+	bottom:70%;
+	width:20px;
+	height: 20px;
+	z-index: 2;
+	cursor:pointer;
+}
+
+#daysOfWeek {
+	position:relative;
+	left:-8px;
+	margin-left:19px;
+}
+
+#ErrorStyle {
+	color: red;
+}
+
+#FotoLable {
+	position:relative;
+	left:-360px;
+}
+
+#menuText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+#numeration {
+	position: relative;
+	margin: 4px;
+}
+
+#leftArrow {
+	position: fixed;
+	left: 20px;
+	top:40%;
+	bottom:40%;
+	width: 30px;
+	height: 10%;
+	z-index: 2;
+	cursor:pointer;
+}
+
+#rightArrow {
+	position: fixed;
+	right: 20px;
+	top:40%;
+	bottom:40%;
+	width: 30px;
+	height: 10%;
+	z-index: 2;
+	cursor:pointer;
+}
+
+#topic {
+	margin:2px;
+}
+
+.backtop {
+	position: relative;
+	top: -10px;
+	width: 100%;
+	height:100px;
+	margin:0;
+}
+
+.general {
+	width:750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.generalHome{
+	width:960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.generalIndex{
+	width:60%;
+	margin-left: 22%;
+	margin-right: auto;
+}
+
+.menuTabs1 {
+	position: relative;
+	left: 20px;
+}
+.menuTabs2 {
+	position: relative;
+	left: 35px;
+}
+.menuTabs3 {
+	position: relative;
+	left: 50px;
+}
+.menuTabs4 {
+	position: relative;
+	left: 65px;
+}
+.menuTabs5 {
+	position: relative;
+	left: 80px;
+}
+
+.menutop {
+	position: relative;
+	top: -30px;
+	left: -30%;
+	margin: 0 auto;
+	width: 400px;
+	height: 50px;
+}
+
+.readLink {
+	position: relative;
+	margin-right: 2px;
+}
+
+.textStyle {
+	position: relative;
+	width:100%;
+	border-color: #969696;
+	border-style: solid;
+    border-width: 1px;
+	padding: 5px;
+	text-align: left;
+	margin: 2px;
+	word-wrap: break-word;
+	background-color:white;
+	float:right;
+	-moz-box-shadow: 2px 2px 2px #ccc;
+	-webkit-box-shadow: 2px 2px 2px #ccc;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+.textStyle2 {
+	position: relative;
+	padding: 5px;
+	text-align: left;
+	margin: 2px;
+	
+	word-break: break-word;
+}
+
+.tableStyle {
+	border: 1px solid black;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveImg {
+    0%   {left:90px; opacity:0;}
+    100% {left:0px; opacity:1;}
+}
+
+/* Standard syntax */
+@keyframes moveImg {
+    0%   {left:90px; opacity:0;}
+    100% {left:0px; opacity:1;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes opacityChange {
+    0%   {opacity:0;}
+    100% {opacity:0.5;}
+}
+
+/* Standard syntax */
+@keyframes opacityChange {
+    0%   {opacity:0;}
+    100% {opacity:0.5;}
+}
+
+img#imgToMove {
+    position: relative;
+    -webkit-animation-name: moveImg; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: moveImg;
+    animation-duration: 1.2s;
+	cursor:pointer;
+}
+
+img#cngV {
+    opacity: 0.5;
+    -webkit-animation-name: opacityChange; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: opacityChange;
+    animation-duration: 1s;
+}

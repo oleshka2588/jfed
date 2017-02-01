@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title></title>
+		<link href="JFedStyles.css" rel="stylesheet" type="text/css">
+		<script src="jquery-1.11.3.js"></script>
+	</head>
+	<body>		
+		<div class="backtop">
+			<img src="pictures\topban2.jpg" position="relative">
+			<ul class="menutop">
+				<a href="index.html" class="menuTabs1"><span>Home</span></a>
+				<a href="news.php" class="menuTabs2"><span>News</span></a>
+				<a href="Competitions.html" class="menuTabs3"><span>Competitions</span></a>
+				<a href="Judo.html" class="menuTabs4"><span>Judo</span></a>
+				<a href="about.html" class="menuTabs5"><span>Contact Us</span></a>
+			</ul>
+		</div>		  
+		
+		<div class="general" width="200px">
+		<?php
+			$servername = "localhost";
+			$username = "root";
+			$password = "";
+			$dataBaseName = "jfed2";
+
+			// Create connection
+			$conn = mysqli_connect($servername, $username, $password, $dataBaseName);
+			mysqli_error($conn); 
+			// Check connection
+			
+			$sqlQuery = 'SELECT text,topic 
+					FROM news 
+					ORDER BY date' or die("Error in the consult.." . mysqli_error($conn));
+			$result = $conn->query($sqlQuery);
+			
+			mysqli_close($conn);
+		?>
+		<p class="textStyle">This song might even change my life for the better as I am about to have another go at 'recovery' after a relapse from drug and alcohol abuse. And being a musician myself, one of artistic and self proclaimed "I have insight into life itself", as we all do under the influence of drugs and alcohol....weather that be true or not...it is what we see in the 'straight mind' that truly defines us.
+It can be bloody hard, I'll tell you that...but when achieved, tis a joy to sit on that mountain of "Recovery". <a href="" class="readLink">Read</a></p>
+<p class="textStyle">This song might even change my life for the better as I am about to have another go at 'recovery' after a relapse from drug and alcohol abuse. And being a musician myself, one of artistic and self proclaimed "I have insight into life itself", as we all do under the influence of drugs and alcohol....weather that be true or not...it is what we see in the 'straight mind' that truly defines us.
+It can be bloody hard, I'll tell you that...but when achieved, tis a joy to sit on that mountain of "Recovery". </p>
+<p class="textStyle">This song might even change my life for the better as I am about to have another go at 'recovery' after a relapse from drug and alcohol abuse. And being a musician myself, one of artistic and self proclaimed "I have insight into life itself", as we all do under the influence of drugs and alcohol....weather that be true or not...it is what we see in the 'straight mind' that truly defines us.
+It can be bloody hard, I'll tell you that...but when achieved, tis a joy to sit on that mountain of "Recovery".</p>
+<p class="textStyle">This song might even change my life for the better as I am about to have another go at 'recovery' after a relapse from drug and alcohol abuse. And being a musician myself, one of artistic and self proclaimed "I have insight into life itself", as we all do under the influence of drugs and alcohol....weather that be true or not...it is what we see in the 'straight mind' that truly defines us.
+It can be bloody hard, I'll tell you that...but when achieved, tis a joy to sit on that mountain of "Recovery".</p>
+<p class="textStyle">This song might even change my life for the better as I am about to have another go at 'recovery' after a relapse from drug and alcohol abuse. And being a musician myself, one of artistic and self proclaimed "I have insight into life itself", as we all do under the influence of drugs and alcohol....weather that be true or not...it is what we see in the 'straight mind' that truly defines us.
+It can be bloody hard, I'll tell you that...but when achieved, tis a joy to sit on that mountain of "Recovery".</p>
+		</div>
+	</body>
+</html>
